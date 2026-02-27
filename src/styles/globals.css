@@ -1,5 +1,16 @@
 @import "tailwindcss";
+
+
+
 @plugin "./hero.ts";
 
 @source "../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}";
 @custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-sans: Montserrat, ui-sans-serif, sans-serif, system-ui;
+}
+
+@theme inline {
+  --font-sans: var(--font-sans);
+}
