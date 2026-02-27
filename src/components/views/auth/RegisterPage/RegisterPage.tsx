@@ -1,4 +1,4 @@
-import useRegister from "@/pages/auth/register/useRegister";
+import useRegister from "@/components/views/auth/RegisterPage/useRegister";
 import { cn } from "@/utils/cn";
 import { Button, Card, CardBody, Input, Spinner } from "@heroui/react";
 import Image from "next/image";
