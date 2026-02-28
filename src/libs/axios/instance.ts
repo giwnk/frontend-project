@@ -4,7 +4,7 @@ import { Session } from "next-auth";
 import { getSession } from "next-auth/react";
 
 const headers = {
-  "Content-Type": "application/jsob",
+  "Content-Type": "application/json",
 };
 
 interface CustomSession extends Session {

@@ -121,7 +121,7 @@ export default function RegisterPage() {
                         aria-label="toggle password visibility"
                         className="focus:outline-solid outline-transparent"
                         type="button"
-                        onClick={() => handleVisiblePassword("confirmPassword")}
+                        onClick={() => handleVisiblePassword("password")}
                       >
                         {visiblePassword ? (
                           <FaEyeSlash className="text-2xl text-default-400 pointer-events-none" />
