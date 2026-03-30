@@ -31,7 +31,7 @@ const useRegister = () => {
     password: false,
     confirmPassword: false,
   });
-  
+
   const handleVisiblePassword = (key: "password" | "confirmPassword") => {
     setVisiblePassword({
       ...visiblePassword,
@@ -54,7 +54,7 @@ const useRegister = () => {
     return result;
   };
 
-  const {mutate: mutateRegister, isPending: isPendingRegister} = useMutation({
+  const { mutate: mutateRegister, isPending: isPendingRegister } = useMutation({
     mutationFn: registerService,
     onError(error) {
       setError("root", {
@@ -67,7 +67,7 @@ const useRegister = () => {
     },
   });
 
-  const handleRegister = (data: IRegister) => mutateRegister(data)
+  const handleRegister = (data: IRegister) => mutateRegister(data);
 
   return {
     visiblePassword,
@@ -78,7 +78,7 @@ const useRegister = () => {
     errors,
     setError,
     handleRegister,
-    isPendingRegister
+    isPendingRegister,
   };
 };
 

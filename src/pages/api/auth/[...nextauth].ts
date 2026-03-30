@@ -4,7 +4,6 @@ import CredentialsProvider from "next-auth/providers/credentials";
 import { JWTExtend, SessionExtended, UserExtended } from "@/types/Auth";
 import authServices from "@/services/auth";
 
-
 export default NextAuth({
   session: {
     strategy: "jwt",
@@ -51,17 +50,30 @@ export default NextAuth({
       },
     }),
   ],
+  debug: true,
   callbacks: {
-    async jwt({token, user}: {token: JWTExtend; user: UserExtended | null}) {
-        if (user) {
-            token.user = user
-        }
-        return token
+    async jwt({
+      token,
+      user,
+    }: {
+      token: JWTExtend;
+      user: UserExtended | null;
+    }) {
+      if (user) {
+        token.user = user;
+      }
+      return token;
     },
-    async session({session, token}: {session: SessionExtended; token: JWTExtend}){
-        session.user = token.user
-        session.accessToken = token.user?.accessToken
-        return session
-    }
-  }
-})
+    async session({
+      session,
+      token,
+    }: {
+      session: SessionExtended;
+      token: JWTExtend;
+    }) {
+      session.user = token.user;
+      session.accessToken = token.user?.accessToken;
+      return session;
+    },
+  },
+});
