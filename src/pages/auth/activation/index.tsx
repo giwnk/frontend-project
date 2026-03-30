@@ -1,6 +1,6 @@
 import AuthLayout from "@/components/layouts/AuthLayout";
-import Activation from "@/components/views/auth/Activation";
-import authServices from "@/services/auth";
+import Activation from "@/features/auth/components/Activation";
+import authServices from "@/features/auth/services/auth";
 
 interface PropTypes {
   status: "success" | "failed";
@@ -24,11 +24,11 @@ export async function getServerSideProps(context: { query: { code: string } }) {
         },
       };
     } else {
-        return {
-          props: {
-            status: "failed",
-          },
-        };
+      return {
+        props: {
+          status: "failed",
+        },
+      };
     }
   } catch (error) {
     return {

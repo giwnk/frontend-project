@@ -1,6 +1,6 @@
 import instance from "@/libs/axios/instance";
 import endpoint from "./endpoint.constant";
-import { IActivation, ILogin, IRegister } from "@/types/Auth";
+import { IActivation, ILogin, IRegister } from "@/features/auth/types/Auth";
 
 const authServices = {
   register: (payload: IRegister) =>

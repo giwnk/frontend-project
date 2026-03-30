@@ -1,4 +1,4 @@
-import PageHead from "@/components/commons/PageHead";
+import PageHead from "@/components/ui/PageHead";
 import { ReactNode } from "react";
 
 interface PropTypes {
@@ -8,14 +8,12 @@ interface PropTypes {
 
 const AuthLayout = (props: PropTypes) => {
   const { title, children } = props;
-  return(
+  return (
     <>
-        <PageHead title={title} />
-        <section className="w-full h-screen">
-            {children}
-        </section>
+      <PageHead title={title} />
+      <section className="w-full h-screen">{children}</section>
     </>
-  )
+  );
 };
 
-export default AuthLayout
+export default AuthLayout;
