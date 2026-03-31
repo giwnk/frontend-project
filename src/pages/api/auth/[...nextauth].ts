@@ -5,8 +5,8 @@ import {
   JWTExtend,
   SessionExtended,
   UserExtended,
-} from "@/features/auth/types/Auth";
-import authServices from "@/features/auth/services/auth";
+} from "@/features/Auth/types/Auth";
+import authServices from "@/features/Auth/services/auth";
 
 export default NextAuth({
   session: {

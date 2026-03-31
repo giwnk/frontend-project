@@ -2,8 +2,8 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { IRegister } from "@/features/auth/types/Auth";
-import authServices from "@/features/auth/services/auth";
+import { IRegister } from "@/features/Auth/types/Auth";
+import authServices from "@/features/Auth/services/auth";
 import { useMutation } from "@tanstack/react-query";
 import { useRouter } from "next/router";
 

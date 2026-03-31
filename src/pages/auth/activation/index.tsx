@@ -1,6 +1,6 @@
 import AuthLayout from "@/components/layouts/AuthLayout";
-import Activation from "@/features/auth/components/Activation";
-import authServices from "@/features/auth/services/auth";
+import Activation from "@/features/Auth/components/Activation";
+import authServices from "@/features/Auth/services/auth";
 
 interface PropTypes {
   status: "success" | "failed";
