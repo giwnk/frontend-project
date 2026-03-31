@@ -25,7 +25,7 @@ const DashboardLayoutSidebar = (props: IPropTypes) => {
     <div
       className={cn(
         "fixed lg:relative max-w-[250px] z-50 flex h-screen flex-col justify-between -translate-x-full lg:translate-x-0 border-r-1 border-default-200 bg-white px-4 py-6 transition-all w-full",
-        {"translate-x-0": isOpen}
+        { "translate-x-0": isOpen },
       )}
     >
       <div className="flex items-center justify-center flex-col  ">
@@ -46,7 +46,9 @@ const DashboardLayoutSidebar = (props: IPropTypes) => {
             <ListboxItem
               key={item.key}
               className={cn("my-1 h-12 text-2xl", {
-                "bg-danger-500 text-white": item.href === router.pathname,
+                "bg-danger-500 text-white": router.pathname.startsWith(
+                  item.href,
+                ),
               })}
               startContent={item.icon}
               textValue={item.label}
