@@ -1,5 +1,5 @@
 import DashboardLayout from "@/components/layouts/DashboardLayout";
-import Dashboard from "@/features/Member/components/Dashboard";
+import Dashboard from "@/features/member/components/Dashboard";
 
 export default function DashboardMemberPage() {
   return (
