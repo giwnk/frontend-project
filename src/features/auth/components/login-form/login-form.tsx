@@ -1,4 +1,4 @@
-import useLogin from "../../hooks/useLogin";
+import useLogin from "../../hooks/use-login";
 import { cn } from "@/utils/cn";
 import { Button, Card, CardBody, Input, Spinner } from "@heroui/react";
 import Image from "next/image";

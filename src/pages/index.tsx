@@ -1,6 +1,6 @@
 import { Google_Sans, Inter, Montserrat } from "next/font/google";
 import { Button } from "@heroui/react";
-import PageHead from "@/components/ui/PageHead";
+import PageHead from "@/components/ui/page-head";
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",

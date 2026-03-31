@@ -1,5 +1,5 @@
-import AuthLayout from "@/components/layouts/AuthLayout";
-import Register from "@/features/auth/components/RegisterSuccess";
+import AuthLayout from "@/components/layouts/auth-layout";
+import Register from "@/features/auth/components/register-success";
 
 export default function Index() {
   return (

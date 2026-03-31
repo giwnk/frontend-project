@@ -1,3 +1,3 @@
-import Activation from "./Activation";
+import Activation from "./activation";
 
 export default Activation

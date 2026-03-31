@@ -1,5 +1,5 @@
-import AuthLayout from "@/components/layouts/AuthLayout";
-import Activation from "@/features/auth/components/Activation";
+import AuthLayout from "@/components/layouts/auth-layout";
+import Activation from "@/features/auth/components/activation";
 import authServices from "@/features/auth/services/auth";
 
 interface PropTypes {
